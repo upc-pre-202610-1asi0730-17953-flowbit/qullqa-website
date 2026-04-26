@@ -1,0 +1,11 @@
+body { background: #f9fafb; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+.reg-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); max-width: 650px; width: 100%; border: 1px solid #eee; }
+.back-link { text-decoration: none; color: #6b7280; font-size: 14px; display: block; margin-bottom: 20px; }
+h2 { color: #1a3349; margin-bottom: 5px; }
+.section-title { font-size: 16px; font-weight: bold; color: #1a3349; margin: 25px 0 15px 0; border-bottom: 1px solid #f3f4f6; padding-bottom: 5px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; font-size: 13px; color: #374151; margin-bottom: 5px; }
+.input-group input { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; box-sizing: border-box; background: #fafafa; }
+.btn-reg { width: 100%; padding: 15px; background: #11324d; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; margin-top: 30px; }
+.terms { font-size: 11px; color: #9ca3af; text-align: center; margin-top: 15px; }

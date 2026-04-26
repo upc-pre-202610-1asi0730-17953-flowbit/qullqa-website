@@ -1,1 +1,4 @@
-# Qullqa-Landing-Page
+# Qullqa-LandingPage
+* Se hizo 5 secciones distintas divididas en ramas, se esta haciendo uso de los <div></div> para poder hacer divisiones en formato caja en la landing. De esta manera se podra hacer uso del #ref para poder llamar a esa instancia desde un menu navegable en la clase main-header. Con ello buscamos que la interfaz sea intuitiva y atractiva al usuario al no msotrarles una pantalla de carga estatica que seria similar a observar una imagen .png o .jpg , con ello buscamos atraer a la audiencia a leer informacion de nuestro producto.
+
+Finalmente una vez se haga merch las ramas se uniran dando asi las version final de la landing.

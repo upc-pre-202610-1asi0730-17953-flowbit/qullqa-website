@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Qullqa - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <img src="img/cabaña.png" alt="Qullqa Logo" class="auth-logo">
+            
+            <h1>Bienvenido a Qullqa</h1>
+            <p class="subtitle">Gestión inteligente de inventario</p>
+
+            <form action="dashboard.html">
+                <div class="input-group">
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="input-group">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="********" required>
+                </div>
+                
+                <button type="submit" class="btn-auth">Iniciar sesión</button>
+                <a href="qullca.html" class="forgot-pw">¿Olvidaste tu contraseña?</a>
+            </form>
+
+            <div class="auth-footer">
+                <p>¿No tienes una cuenta? <a href="origin.html">Registrarse</a></p>
+                <div class="roles-info">
+                    Roles disponibles: Administrador, Colaborador, Vendedor
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
