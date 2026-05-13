@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precios — Qullqa</title>
+  <meta name="description" content="Planes de Qullqa para bodegas y farmacias. Desde gratuito hasta planes con IoT completo." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .price-val-wrap { display: flex; align-items: baseline; gap: 2px; margin-bottom: 4px; }
+    .currency { font-size: 1.1rem; font-weight: 700; color: var(--primary); margin-top: 4px; }
+  </style>
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-logo" href="index.html">
+      <img src="logo.jpeg" alt="Qullqa" style="height:44px;width:auto;">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="features.html" data-i18n="nav.features">Características</a>
+      <a href="pricing.html" class="active" data-i18n="nav.pricing">Precios</a>
+      <a href="about.html" data-i18n="nav.about">Nosotros</a>
+    </div>
+    <div class="navbar-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="https://delightful-mud-0c20e9a0f.7.azurestaticapps.net/" class="btn btn-primary btn-sm">Identifícate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ PAGE HERO ══════════ -->
+<section class="pricing-page-hero">
+  <div class="container">
+    <span class="section-tag" data-i18n="pr.tag">Planes</span>
+    <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:.75rem;" data-i18n="pr.title">
+      Elige el plan que se adapta a tu negocio
+    </h1>
+    <p class="section-sub" style="margin:0 auto;" data-i18n="pr.sub">
+      Desde funciones básicas gratuitas hasta herramientas avanzadas con IoT para crecer sin límites.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ PRICING CARDS ══════════ -->
+<section class="pricing-section">
+  <div class="container">
+
+    <!-- Toggle mensual / anual -->
+    <div class="pricing-toggle">
+      <span class="toggle-label" data-i18n="pr.monthly">Mensual</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="billingToggle" />
+        <span class="toggle-slider"></span>
+      </label>
+      <span class="toggle-label" data-i18n="pr.annual">Anual</span>
+      <span class="toggle-badge" data-i18n="pr.discount">30% descuento</span>
+    </div>
+
+    <div class="price-grid">
+
+      <!-- Plan 1: Gratuito -->
+      <div class="price-card">
+        <div class="price-plan" data-i18n="pr.p1.name">Gratuito</div>
+        <div class="price-val-wrap">
+          <span class="currency">S/</span>
+          <span class="price-amount"><span id="price-p1">0</span></span>
+          <span style="font-size:13px;color:var(--text-muted);margin-left:4px;" data-i18n-html="pr.p1.price"> / mes</span>
+        </div>
+        <div class="price-desc" data-i18n="pr.p1.desc">Para bodegas que recién comienzan su digitalización.</div>
+        <ul class="price-features">
+          <li data-i18n="pr.p1.f1">Hasta 100 productos</li>
+          <li data-i18n="pr.p1.f2">Registro de ventas básico</li>
+          <li data-i18n="pr.p1.f3">1 usuario</li>
+          <li class="no" data-i18n="pr.p1.f4">Alertas de vencimiento</li>
+          <li class="no" data-i18n="pr.p1.f5">Módulo IoT</li>
+          <li class="no" data-i18n="pr.p1.f6">Reportes avanzados</li>
+        </ul>
+      </div>
+
+      <!-- Plan 2: Bodegas Pro -->
+      <div class="price-card featured">
+        <div class="price-popular" data-i18n="pr.p2.popular">Más popular</div>
+        <div class="price-plan" data-i18n="pr.p2.name">Bodegas Pro</div>
+        <div class="price-val-wrap">
+          <span class="currency">S/</span>
+          <span class="price-amount"><span id="price-p2">29</span></span>
+          <span style="font-size:13px;color:var(--text-muted);margin-left:4px;">/ mes</span>
+        </div>
+        <div class="price-desc" data-i18n="pr.p2.desc">Para bodegueros que quieren control total de su inventario.</div>
+        <ul class="price-features">
+          <li data-i18n="pr.p2.f1">Productos ilimitados</li>
+          <li data-i18n="pr.p2.f2">Venta POS completa</li>
+          <li data-i18n="pr.p2.f3">Hasta 5 usuarios</li>
+          <li data-i18n="pr.p2.f4">Alertas de vencimiento</li>
+          <li data-i18n="pr.p2.f5">Reportes financieros</li>
+          <li class="no" data-i18n="pr.p2.f6">Módulo IoT</li>
+        </ul>
+      </div>
+
+      <!-- Plan 3: Farmacias -->
+      <div class="price-card">
+        <div class="price-plan" data-i18n="pr.p3.name">Farmacias</div>
+        <div class="price-val-wrap">
+          <span class="currency">S/</span>
+          <span class="price-amount"><span id="price-p3">59</span></span>
+          <span style="font-size:13px;color:var(--text-muted);margin-left:4px;">/ mes</span>
+        </div>
+        <div class="price-desc" data-i18n="pr.p3.desc">Control riguroso para farmacias con trazabilidad IoT.</div>
+        <ul class="price-features">
+          <li data-i18n="pr.p3.f1">Todo lo de Bodegas Pro</li>
+          <li data-i18n="pr.p3.f2">Control de lotes y series</li>
+          <li data-i18n="pr.p3.f3">Usuarios ilimitados</li>
+          <li data-i18n="pr.p3.f4">Integración IoT completa</li>
+          <li data-i18n="pr.p3.f5">Reportes SUNAT / DIGEMID</li>
+          <li data-i18n="pr.p3.f6">Soporte prioritario</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="price-note" data-i18n="pr.note">Sin tarjeta de crédito · Cancela cuando quieras · 14 días de garantía</p>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="pricing-faq">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag" data-i18n="pr.faq.tag">FAQ</span>
+      <h2 class="section-title" data-i18n="pr.faq.title">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="pr.faq.q1">¿Puedo cambiar de plan en cualquier momento?</div>
+        <div class="faq-a" data-i18n="pr.faq.a1">Sí. Puedes actualizar o degradar tu plan en cualquier momento desde la configuración de tu cuenta. Los cambios se aplican inmediatamente.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="pr.faq.q2">¿Qué pasa con mis datos si cancelo?</div>
+        <div class="faq-a" data-i18n="pr.faq.a2">Tus datos se conservan durante 30 días después de la cancelación. Puedes exportar todo tu historial en cualquier momento.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="pr.faq.q3">¿El módulo IoT requiere hardware adicional?</div>
+        <div class="faq-a" data-i18n="pr.faq.a3">El módulo IoT es compatible con sensores estándar de rastreo GPS. Te ayudamos a configurarlo en la primera semana de uso del plan Farmacias.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA BANNER ══════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="section-title" data-i18n="cta.title">Empieza hoy de forma gratuita</h2>
+    <p class="section-sub white" data-i18n="cta.sub">Sin tarjeta de crédito. Prueba Qullqa con hasta 100 productos sin costo alguno.</p>
+    <div class="cta-banner-btns">
+      <a href="https://delightful-mud-0c20e9a0f.7.azurestaticapps.net/" class="btn btn-primary btn-lg" style="background:white;color:var(--primary);border-color:white;">Identifícate</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="navbar-logo" href="index.html">
+          <img src="logo.jpeg" alt="Qullqa" style="height:44px;width:auto;">
+        </a>
+        <p class="footer-tagline" data-i18n="ft.tagline">Gestión inteligente para negocios independientes en Perú.</p>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.product">Producto</div>
+        <div class="footer-links-list">
+          <a href="features.html" data-i18n="nav.features">Características</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.company">Empresa</div>
+        <div class="footer-links-list">
+          <a href="about.html" data-i18n="nav.about">Nosotros</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.legal">Legal</div>
+        <div class="footer-links-list">
+          <a href="#" data-i18n="ft.terms">Términos</a>
+          <a href="#" data-i18n="ft.privacy">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="ft.copy">© 2026 Flowbit · UPC · Lima, Perú</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="ft.terms">Términos</a>
+        <a href="#" data-i18n="ft.privacy">Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
