@@ -1,294 +1,408 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qullqa - Gestión Inteligente para tu Negocio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qullqa — Gestión Inteligente para tu Negocio</title>
+  <meta name="description" content="Qullqa digitaliza tu inventario, controla tus ventas y monitorea tus entregas con IoT en tiempo real. La solución ideal para bodegas y farmacias en Perú." />
+  <meta name="keywords" content="gestión de inventario, bodega, farmacia, control de stock, IoT, ventas POS, MYPE, Perú, Flowbit, Qullqa" />
+  <meta name="author" content="Flowbit Team" />
+  <meta name="copyright" content="Copyright Flowbit 2026" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .5s ease, transform .5s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+  </style>
 </head>
 <body>
-    <div class="lp-wrap">
-        <h2 class="sr-only">Landing page de Qullqa por Flowbit</h2>
 
-        <nav class="navbar">
-            <div class="navbar-logo">
-<div class="logo-icon">
-    <img src="img/cabaña.png" alt="Qullqa Logo" class="logo-img">
-</div>
-                <span class="logo-name">QULLQA</span>
-            </div>
-            <div class="navbar-links">
-                <a href="#hero">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#vision">Visión</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#contacto">Contacto</a>
-            </div>
-            <div>
-<button class="btn-nav-outline" onclick="location.href='formulario.html'">Iniciar sesión</button>
-<button class="btn-nav" onclick="location.href='origin.html'">Registrarse</button>            </div>
-        </nav>
-
-        <section id="hero" class="hero">
-            <div>
-                <div class="hero-badge">
-                    <span class="hero-badge-dot"></span>
-                    Ahora disponible en Perú · Flowbit
-                </div>
-                <h1 class="hero-title">
-                    Gestión inteligente<br>para tu <span>bodega</span><br>o farmacia
-                </h1>
-                <p class="hero-desc">
-                    Qullqa digitaliza tu inventario, controla tus ventas y monitorea tus entregas con IoT en tiempo real. Todo en una plataforma simple y accesible.
-                </p>
-                <div class="hero-btns">
-                    <button class="btn-primary">Comenzar gratis</button>
-                    <button class="btn-secondary">Ver demo</button>
-                </div>
-                <div class="hero-stats">
-                    <div class="hero-stat">
-                        <div class="hero-stat-val">535K+</div>
-                        <div class="hero-stat-lbl">Bodegas en Perú</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-val">-20%</div>
-                        <div class="hero-stat-lbl">Pérdidas por vencidos</div>
-                    </div>
-                    <div class="hero-stat">
-                        <div class="hero-stat-val">&lt;10s</div>
-                        <div class="hero-stat-lbl">Registro de venta</div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="hero-visual">
-                    <div class="hv-topbar">
-                        <div class="hv-dot" style="background:#FF6B6B;"></div>
-                        <div class="hv-dot" style="background:#FFD93D;"></div>
-                        <div class="hv-dot" style="background:#4ECDC4;"></div>
-                        <span class="hv-title">Dashboard · Qullqa</span>
-                    </div>
-                    <div class="hv-body">
-                        <div style="font-size:11px;font-weight:700;color:var(--navy);margin-bottom:8px;">Dashboard — Resumen general</div>
-                        <div class="hv-row">
-                            <div class="hv-card"><div class="hv-card-lbl">Productos</div><div class="hv-card-val">487</div></div>
-                            <div class="hv-card"><div class="hv-card-lbl">Stock Bajo</div><div class="hv-card-val warn">12</div></div>
-                            <div class="hv-card"><div class="hv-card-lbl">Por Vencer</div><div class="hv-card-val danger">8</div></div>
-                            <div class="hv-card"><div class="hv-card-lbl">Valor Inv.</div><div class="hv-card-val teal">S/45k</div></div>
-                        </div>
-                        <div class="hv-chart-label">Movimientos de la semana</div>
-                        <div class="hv-bars">
-                            <div class="hv-bar" style="height:65%;"></div>
-                            <div class="hv-bar" style="height:80%;"></div>
-                            <div class="hv-bar" style="height:55%;"></div>
-                            <div class="hv-bar" style="height:90%;"></div>
-                            <div class="hv-bar" style="height:100%;"></div>
-                            <div class="hv-bar" style="height:70%;"></div>
-                            <div class="hv-bar" style="height:50%;"></div>
-                        </div>
-                        <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--muted);margin-top:3px;">
-                            <span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="segment">
-            <div style="font-size:13px;font-weight:700;color:var(--navy);text-align:center;margin-bottom:4px;">¿Para quién es Qullqa?</div>
-            <div class="seg-grid">
-                <div class="seg-card">
-                    <div class="seg-icon">🏪</div>
-                    <div>
-                        <div class="seg-name">Bodegueros independientes</div>
-                        <div class="seg-desc">Controla tu stock, registra ventas y conoce tus ganancias reales sin complicaciones técnicas.</div>
-                    </div>
-                </div>
-                <div class="seg-card">
-                    <div class="seg-icon">💊</div>
-                    <div>
-                        <div class="seg-name">Farmacias y boticas</div>
-                        <div class="seg-desc">Alertas de vencimiento, control de lotes y trazabilidad para garantizar la seguridad de tus medicamentos.</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section id="servicios" class="servicios">
-            <span class="section-tag">Servicios</span>
-            <h2 class="section-title">Todo lo que necesita tu negocio</h2>
-            <p class="section-sub">Funcionalidades diseñadas para hacer tu día a día más eficiente.</p>
-            <div class="svc-grid">
-                <div class="svc-card"><div class="svc-icon teal">📦</div><div class="svc-name">Control de Inventario</div><div class="svc-desc">Registra entradas y salidas de productos con alertas automáticas.</div></div>
-                <div class="svc-card"><div class="svc-icon warn">⏰</div><div class="svc-name">Alertas de Vencimiento</div><div class="svc-desc">Notificaciones proactivas antes de que un producto caduque.</div></div>
-                <div class="svc-card"><div class="svc-icon blue">📡</div><div class="svc-name">Seguimiento IoT</div><div class="svc-desc">Monitorea tus entregas en tiempo real con sensores conectados.</div></div>
-                <div class="svc-card"><div class="svc-icon green">💰</div><div class="svc-name">Venta POS</div><div class="svc-desc">Interfaz táctil rápida compatible con boletas electrónicas.</div></div>
-                <div class="svc-card"><div class="svc-icon teal">📊</div><div class="svc-name">Reportes Financieros</div><div class="svc-desc">Dashboards automáticos de ingresos vs egresos mensuales.</div></div>
-                <div class="svc-card"><div class="svc-icon red">🏭</div><div class="svc-name">Gestión de Proveedores</div><div class="svc-desc">Administra contactos de abastecimiento y datos de RUC.</div></div>
-            </div>
-        </section>
-
-        <section id="vision" class="vision">
-            <span class="section-tag">Visión</span>
-            <h2 class="section-title">Transformando el comercio tradicional</h2>
-            <p class="section-sub">Somos Flowbit, comprometidos con la digitalización de MYPES peruanas.</p>
-            <div class="vision-grid">
-                <div class="vision-block">
-                    <div class="vision-block-icon">🎯</div>
-                    <div class="vision-block-title">Misión</div>
-                    <div class="vision-block-text">Brindar soluciones tecnológicas accesibles para optimizar procesos.</div>
-                </div>
-                <div class="vision-block">
-                    <div class="vision-block-icon">🚀</div>
-                    <div class="vision-block-title">Visión</div>
-                    <div class="vision-block-text">Ser la plataforma líder de gestión digital en Latinoamérica.</div>
-                </div>
-            </div>
-        </section>
-
-<section id="portafolio" class="portafolio">
-    <div class="container">
-        <span class="badge">PORTAFOLIO</span>
-        <h2>La plataforma en acción</h2>
-        
-        <div class="portfolio-vertical-grid">
-            <div class="portfolio-item">
-                <div class="portfolio-img-container">
-                    <img src="img/dashboard.png" alt="Dashboard Qullqa">
-                </div>
-                <div class="portfolio-info">
-                    <h3>Dashboard Inteligente</h3>
-                    <p>Visualización clara de stock bajo, productos por vencer y métricas de valor de inventario.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="portfolio-img-container">
-                    <img src="img/alertas.png" alt="Configuración App">
-                </div>
-                <div class="portfolio-info">
-                    <h3>Personalización Total</h3>
-                    <p>Configura tu aplicación para adaptarla a las necesidades específicas de tu farmacia o bodega.</p>
-                </div>
-            </div>
-
-            <div class="portfolio-item">
-                <div class="portfolio-img-container">
-                    <img src="img/entrada_salida.png" alt="Control de Inventario">
-                </div>
-                <div class="portfolio-info">
-                    <h3>Control de Entradas y Salidas</h3>
-                    <p>Gestión técnica de productos con cálculo automático de saldos y movimientos semanales.</p>
-                </div>
-            </div>
-        </div>
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-logo" href="index.html">
+      <img src="logo.jpeg" alt="Qullqa" style="height:44px;width:auto;">
+    </a>
+    <div class="navbar-links">
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="features.html" data-i18n="nav.features">Características</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+      <a href="about.html" data-i18n="nav.about">Nosotros</a>
     </div>
+    <div class="navbar-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="https://delightful-mud-0c20e9a0f.7.azurestaticapps.net/" class="btn btn-primary btn-sm">Identifícate</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span data-i18n="hero.badge">Ahora disponible en Perú · Flowbit</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title.line1">Gestión inteligente para tu</span><br>
+          <em class="highlight" data-i18n="hero.title.highlight">bodega o farmacia</em>
+        </h1>
+        <p class="hero-desc" data-i18n="hero.desc">
+          Qullqa digitaliza tu inventario, controla tus ventas y monitorea tus entregas con IoT en tiempo real. Todo en una plataforma simple y accesible.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-val" data-i18n="hero.stat1.val">535K+</div>
+            <div class="stat-lbl" data-i18n="hero.stat1.lbl">Bodegas en Perú</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val" data-i18n="hero.stat2.val">−20%</div>
+            <div class="stat-lbl" data-i18n="hero.stat2.lbl">Pérdidas por vencidos</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val" data-i18n="hero.stat3.val">&lt;10s</div>
+            <div class="stat-lbl" data-i18n="hero.stat3.lbl">Registro de venta</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Mockup -->
+      <div class="hero-visual">
+        <div class="hv-topbar">
+          <div class="hv-dot" style="background:#EF4444;"></div>
+          <div class="hv-dot" style="background:#FACC15;"></div>
+          <div class="hv-dot" style="background:#22C55E;"></div>
+          <span class="hv-title">Dashboard · Qullqa</span>
+        </div>
+        <div class="hv-body">
+          <div class="hv-label">Dashboard — Resumen general</div>
+          <div class="hv-cards">
+            <div class="hv-card">
+              <div class="hv-card-lbl">Productos</div>
+              <div class="hv-card-val">487</div>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-lbl">Stock Bajo</div>
+              <div class="hv-card-val warn">12</div>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-lbl">Por Vencer</div>
+              <div class="hv-card-val danger">8</div>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-lbl">Valor Inv.</div>
+              <div class="hv-card-val green">S/45k</div>
+            </div>
+          </div>
+          <div class="hv-chart-lbl">Movimientos de la semana</div>
+          <div class="hv-bars">
+            <div class="hv-bar" style="height:65%"></div>
+            <div class="hv-bar" style="height:82%"></div>
+            <div class="hv-bar" style="height:54%"></div>
+            <div class="hv-bar" style="height:91%"></div>
+            <div class="hv-bar" style="height:100%"></div>
+            <div class="hv-bar" style="height:73%"></div>
+            <div class="hv-bar" style="height:50%"></div>
+          </div>
+          <div class="hv-days">
+            <span>Lun</span><span>Mar</span><span>Mié</span>
+            <span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+          </div>
+          <div class="hv-alert">
+            <span style="font-size:14px;">🔴</span>
+            <span class="hv-alert-text">Coca Cola 1.5L — Stock bajo (3 unid.)</span>
+            <span class="hv-alert-badge">alta</span>
+          </div>
+          <div class="hv-alert-warn">
+            <span style="font-size:14px;">🟡</span>
+            <span class="hv-alert-text">Leche Gloria — Vence en 3 días</span>
+            <span class="hv-alert-badge">media</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="planes" class="planes">
-    <div class="container">
-        <span class="badge">PLANES</span>
-        <h2>Planes para cada etapa</h2>
-        <div class="planes-container-vertical">
-
-    <!-- PLAN FREE -->
-            <div class="plan-card-v blue-soft">
-                <div class="plan-header">
-                    <h3>Gratuito</h3>
-                    <div class="price">S/ 0</div>
-                </div>
-                <ul class="plan-list">
-                    <li>Dashboard</li>
-                    <li>Reporte de ventas básico</li>
-                    <li>Lista de productos</li>
-                    <li>Lista de precios</li>
-                    <li>1 usuario</li>
-                </ul>
-                <button class="btn-plan-v" onclick="location.href='origin.html'">Elegir Plan</button>
-            </div>
-
-    <!-- PLAN PRO -->
-            <div class="plan-card-v gold-soft popular">
-                <div class="popular-badge">Más Elegido</div>
-                <div class="plan-header">
-            <h3>Pro</h3>
-            <div class="price">S/ 49.90</div>
-        </div>
-        <ul class="plan-list">
-            <li>Todo lo del Plan Gratuito</li>
-            <li>Soporte</li>
-            <li>Alertas de bajo stock</li>
-            <li>Alertas de productos por vencer</li>
-            <li>Entrega o recibo de stock</li>
-            <li>Roles: Admin, Colaborador, Vendedor</li>
-            <li>Control de proveedores</li>
-            <li>3 usuarios</li>
-        </ul>
-        <button class="btn-plan-v gold-btn" onclick="location.href='origin.html'">Elegir Plan</button>
+<!-- ══════════ STATS BAR ══════════ -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s1.val">535K+</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s1.lbl">Bodegas en Perú</div>
+      </div>
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s2.val">40%</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s2.lbl">MYPEs sin sistema digital</div>
+      </div>
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s3.val">−20%</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s3.lbl">Pérdidas reducibles</div>
+      </div>
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s4.val">&lt;10s</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s4.lbl">Para registrar una venta</div>
+      </div>
     </div>
-
-    <!-- PLAN PREMIUM -->
-    <div class="plan-card-v blue-soft">
-        <div class="plan-header">
-            <h3>Premium</h3>
-            <div class="price">S/ 89.90</div>
-        </div>
-        <ul class="plan-list">
-            <li>Todo lo del Plan Pro</li>
-            <li>Stock por almacén</li>
-            <li>Reportes detallados (día, semana, producto)</li>
-            <li>Monitoreo en tiempo real (IoT + geolocalización)</li>
-            <li>Registro de ventas</li>
-            <li>5 usuarios</li>
-        </ul>
-        <button class="btn-plan-v" onclick="location.href='origin.html'">Elegir Plan</button>
-    </div>
-
+  </div>
 </div>
+
+<!-- ══════════ SEGMENTS ══════════ -->
+<div class="segments">
+  <div class="container">
+    <p class="segments-label" data-i18n="seg.label">¿Para quién es Qullqa?</p>
+    <div class="segments-grid">
+      <div class="seg-card">
+        <div class="seg-icon">🏪</div>
+        <div>
+          <div class="seg-name" data-i18n="seg.bodegas.name">Bodegueros independientes</div>
+          <div class="seg-desc" data-i18n="seg.bodegas.desc">Controla tu stock, registra ventas y conoce tus ganancias reales sin complicaciones técnicas.</div>
+        </div>
+      </div>
+      <div class="seg-card">
+        <div class="seg-icon">💊</div>
+        <div>
+          <div class="seg-name" data-i18n="seg.farmacias.name">Farmacias y boticas</div>
+          <div class="seg-desc" data-i18n="seg.farmacias.desc">Alertas de vencimiento, control de lotes y trazabilidad para garantizar la seguridad de tus medicamentos.</div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- ══════════ FEATURES ══════════ -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="feat.tag">Servicios</span>
+      <h2 class="section-title" data-i18n="feat.title">Todo lo que necesita tu negocio</h2>
+      <p class="section-sub" data-i18n="feat.subtitle">Funcionalidades diseñadas para hacer tu día a día más eficiente, sin requerir conocimientos técnicos.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon-wrap blue">📦</div>
+        <div class="feat-name" data-i18n="feat.f1.name">Control de Inventario</div>
+        <div class="feat-desc" data-i18n="feat.f1.desc">Registra entradas y salidas de productos. Alertas automáticas cuando el stock está bajo.</div>
+        <span class="feat-tag" data-i18n="feat.f1.tag">Gestión de stock</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap yellow">⏰</div>
+        <div class="feat-name" data-i18n="feat.f2.name">Alertas de Vencimiento</div>
+        <div class="feat-desc" data-i18n="feat.f2.desc">Notificaciones proactivas 30, 60 y 90 días antes de que un producto caduque.</div>
+        <span class="feat-tag" data-i18n="feat.f2.tag">Prevención de pérdidas</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap navy">📡</div>
+        <div class="feat-name" data-i18n="feat.f3.name">Seguimiento IoT</div>
+        <div class="feat-desc" data-i18n="feat.f3.desc">Monitorea entregas en tiempo real con sensores. Mayor seguridad en tu cadena de suministro.</div>
+        <span class="feat-tag" data-i18n="feat.f3.tag">Tecnología conectada</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap green">💰</div>
+        <div class="feat-name" data-i18n="feat.f4.name">Venta POS</div>
+        <div class="feat-desc" data-i18n="feat.f4.desc">Registra ventas en menos de 10 segundos con nuestra interfaz táctil. Compatible con boletas.</div>
+        <span class="feat-tag" data-i18n="feat.f4.tag">Punto de venta rápido</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap blue">📊</div>
+        <div class="feat-name" data-i18n="feat.f5.name">Reportes Financieros</div>
+        <div class="feat-desc" data-i18n="feat.f5.desc">Dashboards con gráficos automáticos de ingresos vs egresos mensuales para tomar mejores decisiones.</div>
+        <span class="feat-tag" data-i18n="feat.f5.tag">Inteligencia de negocio</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap red">🏭</div>
+        <div class="feat-name" data-i18n="feat.f6.name">Gestión de Proveedores</div>
+        <div class="feat-desc" data-i18n="feat.f6.desc">Administra tus contactos de abastecimiento con datos de RUC, contacto y categorías.</div>
+        <span class="feat-tag" data-i18n="feat.f6.tag">Control de suministro</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="features.html" class="btn btn-outline">Ver todas las características →</a>
+    </div>
+  </div>
 </section>
 
-        <section id="contacto" class="contacto">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item"><span>📍</span><div>Lima, Perú - UPC</div></div>
-                    <div class="contact-item"><span>✉️</span><div>contacto@qullqa.com</div></div>
-                </div>
-                <form class="contact-form" id="qullqaForm">
-                    <div class="form-title">Envíanos un mensaje</div>
-                    <div class="form-group"><label class="form-label">Nombre</label><input class="form-input" type="text" required></div>
-                    <div class="form-group"><label class="form-label">Correo</label><input class="form-input" type="email" required></div>
-                    <div class="form-group">
-                        <label class="form-label">Mensaje</label>
-                        <textarea class="form-textarea" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
-
-        <footer>
-            <span class="logo-name">QULLQA</span>
-            <span class="footer-text">© 2026 Flowbit · UPC</span>
-            <div class="footer-links"><a href="#">Términos</a><a href="#">Privacidad</a></div>
-        </footer>
+<!-- ══════════ PORTFOLIO ══════════ -->
+<section class="portfolio-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="port.tag">Portafolio</span>
+      <h2 class="section-title" data-i18n="port.title">La plataforma en acción</h2>
+      <p class="section-sub" data-i18n="port.subtitle">Explora las vistas principales de Qullqa. Diseñado para ser simple, rápido y de alto contraste.</p>
     </div>
+    <div class="port-tabs">
+      <button class="port-tab active" data-i18n="port.tab1">Todas las vistas</button>
+      <button class="port-tab" data-i18n="port.tab2">Bodegas</button>
+      <button class="port-tab" data-i18n="port.tab3">Farmacias</button>
+    </div>
+    <div class="port-grid">
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Dashboard</div>
+            <div class="port-mini-row">
+              <div class="port-mini-cell filled"></div>
+              <div class="port-mini-cell green"></div>
+              <div class="port-mini-cell warn"></div>
+              <div class="port-mini-cell red"></div>
+            </div>
+            <div style="display:flex;align-items:flex-end;gap:3px;height:28px;margin-top:6px;">
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:50%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:75%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:60%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:90%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:100%;opacity:.6;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p1.name">Dashboard principal</div>
+          <div class="port-info-desc" data-i18n="port.p1.desc">Resumen visual de inventario, movimientos y alertas</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Movimientos</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--gray-100);border-radius:3px;">
+                <span style="font-size:8px;">Coca Cola 1.5L</span>
+                <span style="font-size:8px;color:#166534;font-weight:700;">+34</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--gray-100);border-radius:3px;">
+                <span style="font-size:8px;">Arroz Costeño 1kg</span>
+                <span style="font-size:8px;color:var(--danger);font-weight:700;">−15</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--gray-100);border-radius:3px;">
+                <span style="font-size:8px;">Leche Gloria</span>
+                <span style="font-size:8px;color:#166534;font-weight:700;">+96</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p2.name">Movimientos de Inventario</div>
+          <div class="port-info-desc" data-i18n="port.p2.desc">Historial de entradas, salidas y ajustes en tiempo real</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Proveedores</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+              <div style="padding:5px;background:var(--gray-100);border-radius:3px;">
+                <div style="font-size:8px;font-weight:700;color:var(--primary);">Distrib. Lima SAC</div>
+                <div style="font-size:7px;color:var(--success);">● Activo</div>
+              </div>
+              <div style="padding:5px;background:var(--gray-100);border-radius:3px;">
+                <div style="font-size:8px;font-weight:700;color:var(--primary);">Abarrotes Norte</div>
+                <div style="font-size:7px;color:var(--success);">● Activo</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p3.name">Gestión de Proveedores</div>
+          <div class="port-info-desc" data-i18n="port.p3.desc">Administra contactos, categorías y datos de abastecimiento</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Alertas</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--danger-light);border-radius:3px;">
+                <span style="font-size:8px;color:#991B1B;">Coca Cola — Stock bajo</span>
+                <span style="font-size:7px;font-weight:700;background:var(--danger);color:white;padding:1px 4px;border-radius:2px;">alta</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--warning-light);border-radius:3px;">
+                <span style="font-size:8px;color:#92400E;">Leche Gloria — 3 días</span>
+                <span style="font-size:7px;font-weight:700;background:#D97706;color:white;padding:1px 4px;border-radius:2px;">media</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p4.name">Sistema de Alertas</div>
+          <div class="port-info-desc" data-i18n="port.p4.desc">Notificaciones de stock bajo y vencimientos próximos</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script>
-        document.getElementById('qullqaForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.');
-            this.reset();
-        });
+<!-- ══════════ CTA BANNER ══════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="section-title" data-i18n="cta.title">Empieza hoy de forma gratuita</h2>
+    <p class="section-sub white" data-i18n="cta.sub">Sin tarjeta de crédito. Prueba Qullqa con hasta 100 productos sin costo alguno.</p>
+    <div class="cta-banner-btns">
+      <a href="https://delightful-mud-0c20e9a0f.7.azurestaticapps.net/" class="btn btn-primary btn-lg" style="background:white;color:var(--primary);border-color:white;">Identifícate</a>
+    </div>
+  </div>
+</section>
 
-        // Tabs logic simple
-        const tabs = document.querySelectorAll('.port-tab');
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-            });
-        });
-    </script>
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="navbar-logo" href="index.html">
+          <img src="logo.jpeg" alt="Qullqa" style="height:44px;width:auto;">
+        </a>
+        <p class="footer-tagline" data-i18n="ft.tagline">Gestión inteligente para negocios independientes en Perú.</p>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.product">Producto</div>
+        <div class="footer-links-list">
+          <a href="features.html" data-i18n="nav.features">Características</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.company">Empresa</div>
+        <div class="footer-links-list">
+          <a href="about.html" data-i18n="nav.about">Nosotros</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.legal">Legal</div>
+        <div class="footer-links-list">
+          <a href="#" data-i18n="ft.terms">Términos</a>
+          <a href="#" data-i18n="ft.privacy">Privacidad</a>
+          <a href="#" data-i18n="ft.support">Soporte</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="ft.copy">© 2026 Flowbit · UPC · Lima, Perú</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="ft.terms">Términos</a>
+        <a href="#" data-i18n="ft.privacy">Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
