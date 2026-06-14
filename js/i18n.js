@@ -27,6 +27,7 @@ const i18n = (() => {
       'hero.stat2.lbl':      'Pérdidas por vencidos',
       'hero.stat3.val':      '<10s',
       'hero.stat3.lbl':      'Registro de venta',
+      'login.tag':     'Iniciar sesión',
 
       /* ── Stats bar ── */
       'stats.s1.val': '535K+',  'stats.s1.lbl': 'Bodegas en Perú',
@@ -263,6 +264,7 @@ const i18n = (() => {
       'hero.stat2.lbl':      'Reduction in expired losses',
       'hero.stat3.val':      '<10s',
       'hero.stat3.lbl':      'Sale registration',
+      'login.tag':     'Log in',
 
       /* ── Stats bar ── */
       'stats.s1.val': '535K+',  'stats.s1.lbl': 'Stores in Peru',
